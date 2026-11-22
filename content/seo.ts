@@ -16,7 +16,7 @@ export const meta = {
 };
 
 const sameAs = [links.github, links.portfolioReact, links.portfolioLegacy];
-const personId = `${SITE_URL}#person`;
+const personId = `${SITE_URL}/#person`;
 
 /** Person (+ WebSite, ProfilePage, FAQPage). No phone, address, birth date or education. */
 export function jsonLd() {
@@ -29,7 +29,7 @@ export function jsonLd() {
     jobTitle: "Web Publisher & Frontend Developer",
     description:
       "2015년부터 시맨틱 마크업과 인터랙션으로 기업 홈페이지와 서비스 화면을 만들어 온 웹 퍼블리셔·프론트엔드 개발자. SEO·AEO·GEO 개선과 퍼블리싱 빌드·배포 환경 구축 경험이 있고, Claude Code·Cursor와 여러 모델 CLI·MCP를 연결해 AI 활용 개발을 합니다.",
-    url: SITE_URL || undefined,
+    url: SITE_URL ? `${SITE_URL}/` : undefined,
     image: SITE_URL ? `${SITE_URL}/${meta.ogImage}` : undefined,
     sameAs,
     knowsAbout: [
@@ -65,7 +65,7 @@ export function jsonLd() {
       "@type": "WebSite",
       name: meta.siteName,
       alternateName: "웹 퍼블리셔 우성",
-      url: SITE_URL || undefined,
+      url: SITE_URL ? `${SITE_URL}/` : undefined,
       inLanguage: "ko-KR",
       author: { "@id": personId },
       publisher: { "@id": personId },
@@ -76,7 +76,7 @@ export function jsonLd() {
       inLanguage: "ko-KR",
       /** freshness signal — update whenever the content changes */
       dateModified: "2026-11-22",
-      url: SITE_URL || undefined,
+      url: SITE_URL ? `${SITE_URL}/` : undefined,
       mainEntity: { "@id": personId },
     },
     {

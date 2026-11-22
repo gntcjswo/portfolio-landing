@@ -1443,13 +1443,13 @@
   },
   {
     "id": 132,
-    "name": "돕범 근무표",
+    "name": "포트폴리오 사이트",
     "client": "개인 프로젝트",
     "category": [
       "개인 프로젝트"
     ],
-    "url": "https://wb-schedule.netlify.app/",
-    "project": "personal-wb-schedule"
+    "url": "https://ws-portfolio-landing.netlify.app/",
+    "project": "personal-portfolio-landing"
   },
   {
     "id": 133,

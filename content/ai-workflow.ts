@@ -17,29 +17,25 @@ export const workflowRule = "시맨틱 마크업, 웹 접근성, 크로스 브�
 /** Caption over the 9:16 frame. */
 export const workflowCaption = "규칙대로, 끝까지.";
 
-export type ChatQA = { q: string; a: string[]; source: string };
+export type ChatQA = { q: string; a: string[] };
 
 /** Exactly 4 example questions, two sentences each. */
 export const chatQA: ChatQA[] = [
   {
     q: "인터랙션은 어떻게 만드나요?",
     a: ["CSS와 GSAP·Lottie를 조합해 구현하고,", "직접 만든 공통 애니메이션 라이브러리를 사용합니다."],
-    source: "FAQ · 기술 활용",
   },
   {
     q: "가장 어려웠던 과제는요?",
     a: ["금융권 ES6 코드를 IE에서 구동해야 했습니다.", "Babel 호환 빌드를 새로 구축하고 전체 리팩토링으로 해결했습니다."],
-    source: "FAQ · 극복 경험",
   },
   {
     q: "AI로 개발 속도가 얼마나 달라졌나요?",
     a: ["AI 코딩 과정을 체계화해, 5~7일 걸리던 업무를 1~2일로 줄였습니다.", "3~4개 프로젝트를 동시에 진행해, 1~2일이면 웹사이트 3~4개를 완성합니다."],
-    source: "본인 기재",
   },
   {
     q: "어떤 AI 도구를 쓰나요?",
     a: ["Claude Code와 Cursor를 주력으로 쓰고, 여러 모델 CLI와 Figma·PixelLab MCP를 연결합니다.", "Paseo·Hermes·Grok 봇·Tailscale을 결합해, 업무 시스템의 효율을 높이는 방법을 계속 연구합니다."],
-    source: "작업 환경",
   },
 ];
 
@@ -57,6 +53,6 @@ export const sideProjects = [
   { name: "Design Me", tech: "SCSS·GSAP" },
   { name: "날씨 앱", tech: "React·API" },
   { name: "스타터", tech: "npx CLI" },
-  { name: "근무표", tech: "React·Lottie" },
+  { name: "포트폴리오", tech: "Next.js·R3F" },
   { name: "Launcher", tech: "Firebase" },
 ];

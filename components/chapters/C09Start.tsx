@@ -133,7 +133,7 @@ function TierGauge() {
             ))}
           </ol>
           <p className="t-meta fg-2">
-            칸 하나가 역량 하나입니다. 상위 단계는 하위 단계의 역량을 포함하고, 주황색은 그 단계에서 새로 더한 역량입니다. 연도는 해당 업무가 경력에 처음 기재된 해입니다.
+            칸 하나가 역량 하나입니다. 상위 단계는 하위 단계의 역량을 포함하고, 주황색은 그 단계에서 새로 더한 역량입니다.
           </p>
           <p className="t-meta c09-notice">지금은 라온비엔피에서 세 단계의 일을 모두 하고 있습니다.</p>
           <a className="btn btn-signal" href="#ask" data-cursor="open">
@@ -224,7 +224,6 @@ function CareerTimeline() {
           ))}
         </ol>
       </div>
-      <p className="t-meta fg-3">기간은 포트폴리오 경력 기재 기준입니다. 미르나인에서는 2024.09~12에 프리랜서로 한 번 더 일했습니다.</p>
     </div>
   );
 }

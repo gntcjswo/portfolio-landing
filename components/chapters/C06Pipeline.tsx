@@ -140,7 +140,7 @@ export function C06Pipeline() {
                         priority={(i === active ? 0 : 1) as VideoPriority}
                         reduced={reduced}
                       />
-                      <figcaption className="t-tiny fg-3">작업 예시 · {st.video.name}</figcaption>
+                      <figcaption className="t-tiny fg-3">{st.video.name}</figcaption>
                     </figure>
                   </div>
                 </li>

@@ -527,12 +527,7 @@
 }
 .c03-inner[data-step="4"] .c03-cap {
   color: var(--color-ink);
-}
-.c03-notice {
-  margin-top: auto;
-  padding-top: 16px;
-  color: var(--color-ink-2);
-}
+}
 .c03-cta {
   margin-top: 10px;
   align-self: flex-start;
@@ -693,13 +688,7 @@
   font-style: normal;
   font-weight: 600;
   white-space: nowrap;
-}
-.c03-figcap {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  max-width: 60%;
-}
+}
 .c03-meter {
   position: absolute;
   right: 0;
@@ -1637,10 +1626,7 @@
   }
   .c07-b-demo {
     grid-column: 7 / -1;
-  }
-  .c07-notice {
-    grid-column: 6 / -1;
-  }
+  }
 }
 .c07-a h2,
 .c07-b h3 {
@@ -1907,27 +1893,7 @@
     opacity: 0;
     color: var(--color-marker);
   }
-}
-.c07-sources {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 22px;
-}
-.c07-src {
-  padding: 5px 10px;
-  border-radius: 999px;
-  box-shadow: inset 0 0 0 1px var(--color-night-line);
-  color: var(--color-on-night-2);
-  text-decoration: line-through;
-  text-decoration-color: color-mix(in srgb, var(--color-on-night-2) 50%, transparent);
-}
-.c07-src.is-used {
-  background: var(--color-marker);
-  color: var(--color-ink);
-  box-shadow: none;
-  text-decoration: none;
-}
+}
 .c07-vd {
   display: flex;
   flex-wrap: wrap;
@@ -3409,17 +3375,7 @@ details[open] .c10-a {
   50% {
     opacity: 0;
   }
-}
-.c07-src.is-used {
-  animation: src-in var(--dur-3) var(--ease-out-quint) both;
-  animation-delay: calc(200ms + var(--n, 2) * 120ms);
-}
-@keyframes src-in {
-  from {
-    opacity: 0;
-    transform: translateX(-16px);
-  }
-}
+}
 @media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
   .c07-pin {
     height: 100%;

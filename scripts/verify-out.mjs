@@ -20,7 +20,7 @@ const absRe = /(["'`(\s,=]|\\")\/(_next|media|fonts)\//;
 // Forbidden strings: exaggeration words, outsourcing / sales tone, and mail contact (applications go
 // through job sites).
 const forbidden =
-  /최고|1위|압도적|독보적|무조건|견적|의뢰|맡기|맡길|함께할 작업|협업 제안|범위 문의|비용은 공개|귀사|랜딩페이지|mailto|메일 보내기|메일로|팀 생산성|API 연동/;
+  /최고|1위|압도적|독보적|무조건|견적|의뢰|맡기|맡길|함께할 작업|협업 제안|범위 문의|비용은 공개|귀사|랜딩페이지|mailto|메일 보내기|메일로|팀 생산성|API 연동|본인 기재|예시 화면|예시 연출|근거 ·|출처:|출처 ·|근무표|wb-schedule|ScrollMagic/;
 const cdn =
   /(src|href)=["']https?:\/\/(?!github\.com|[a-z0-9-]+\.github\.io|[a-z0-9.-]+\.woobi\.co\.kr|[a-z0-9-]+\.netlify\.app|[a-z0-9.-]+\.web12\.kr|schema\.org)[^"']+\.(js|css|woff2?|mp4|webp|jpg|png)/i;
 

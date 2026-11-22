@@ -152,7 +152,7 @@ export function C11Contact() {
                 <span className="sr-only"> (새 창)</span>
               </a>
             </p>
-            <p className="t-meta fg-3">basic-starter · weather-app · wb-schedule · cursor-launcher</p>
+            <p className="t-meta fg-3">basic-starter · weather-app · portfolio-landing</p>
           </div>
         </div>
 
@@ -190,7 +190,7 @@ export function C11Contact() {
         <div className="c11-legal t-tiny fg-3">
           <p>우성 (WOOSUNG) · Web Publisher &amp; Frontend Developer</p>
           <p>© 2026 WOOSUNG. Design Me.</p>
-          <p>이 페이지의 대화·생성 화면은 이해를 돕기 위한 예시입니다. 작업 이미지·영상의 권리는 각 고객사에 있습니다.</p>
+          <p>작업 이미지·영상의 권리는 각 고객사에 있습니다.</p>
         </div>
 
         <p className="c11-word" aria-hidden="true">

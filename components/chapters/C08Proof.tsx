@@ -91,7 +91,7 @@ export function EvidenceCard({ e }: { e: Evidence }) {
       <Seal e={e} />
       <h3 className="t-h3 c08-title">{e.title}</h3>
       {e.body ? <p className="t-body c08-body">{e.body}</p> : null}
-      <p className="t-tiny c08-src">출처 · {e.source}</p>
+      {e.period ? <p className="t-tiny c08-src">{e.period}</p> : null}
     </article>
   );
 }

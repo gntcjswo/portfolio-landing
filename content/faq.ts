@@ -15,30 +15,15 @@ export const faqCategoryTone: Record<FaqCategory, "ink" | "marker" | "entity" | 
 
 export type FaqItem = {
   no: string;
-  source: number;
   category: FaqCategory;
   q: string;
   a: string;
   body: string[];
 };
 
-/** FaqItem.source → source label shown in C10Ask */
-export const faqSources: Record<number, string> = {
-  1: "레거시 포트폴리오 · Feature",
-  2: "포트폴리오 · 경력",
-  3: "포트폴리오 · 프로젝트",
-  4: "포트폴리오 · Skills",
-  5: "포트폴리오 FAQ 1",
-  6: "포트폴리오 FAQ 2",
-  9: "레거시 포트폴리오 · Web Accessibility",
-  10: "포트폴리오 · 경력 (라온비엔피)",
-  11: "본인 기재 · AI 작업 환경",
-};
-
 export const faq: FaqItem[] = [
   {
     no: "01",
-    source: 1,
     category: "소개",
     q: "어떤 역할을 맡을 수 있나요?",
     a: "웹 퍼블리싱과 인터랙션 개발이 중심이고, React·Vue 화면 개발과 SEO·AEO·GEO 개선까지 맡습니다.",
@@ -50,19 +35,17 @@ export const faq: FaqItem[] = [
   },
   {
     no: "02",
-    source: 2,
     category: "경력",
     q: "경력은 얼마나 되나요?",
     a: "2015년 4월부터 웹 퍼블리셔로 일했습니다. 2026년 11월 기준 11년 7개월입니다.",
     body: [
-      "셈웨어에서 시작해 앤드오어와 프리랜서 퍼블리싱을 거쳐, 미르나인에서 5년 6개월 동안 웹 에이전시 퍼블리싱을 맡았습니다. 이 기간에 신규 구축 300건 이상, 유지보수 400건 이상의 프로젝트에 참여했습니다(본인 기재).",
+      "셈웨어에서 시작해 앤드오어와 프리랜서 퍼블리싱을 거쳐, 미르나인에서 5년 6개월 동안 웹 에이전시 퍼블리싱을 맡았습니다. 이 기간에 신규 구축 300건 이상, 유지보수 400건 이상의 프로젝트에 참여했습니다.",
       "2024년부터 내담씨앤씨(프리랜서)와 모바일웍스코리아에서 React 기반 프론트엔드 개발과 대기업 프로젝트 퍼블리싱을 했습니다.",
       "2026년 6월부터 라온비엔피 퍼블리싱팀 과장으로 일하고 있습니다.",
     ],
   },
   {
     no: "03",
-    source: 10,
     category: "경력",
     q: "지금은 어떤 일을 하고 있나요?",
     a: "라온비엔피 퍼블리싱팀에서 자사 홈페이지 유지보수와 검색 최적화, 신규 웹 프로젝트를 맡고 있습니다.",
@@ -74,7 +57,6 @@ export const faq: FaqItem[] = [
   },
   {
     no: "04",
-    source: 10,
     category: "검색 최적화",
     q: "SEO·AEO·GEO는 무엇을 개선했나요?",
     a: "진단 도구로 사이트를 분석하고 메타 정보·구조화 데이터·콘텐츠를 고쳐 진단 점수를 높였습니다.",
@@ -86,7 +68,6 @@ export const faq: FaqItem[] = [
   },
   {
     no: "05",
-    source: 3,
     category: "경력",
     q: "대기업 프로젝트 경험이 있나요?",
     a: "네. SKT·기아·하나카드·현대자동차 프로젝트에서 웹/앱 퍼블리싱과 UI 구현을 맡았습니다.",
@@ -98,7 +79,6 @@ export const faq: FaqItem[] = [
   },
   {
     no: "06",
-    source: 4,
     category: "기술",
     q: "주로 쓰는 기술은 무엇인가요?",
     a: "HTML·CSS(SCSS)·JavaScript가 기본이고, React·TypeScript·Vue와 GSAP·Lottie를 씁니다.",
@@ -110,19 +90,17 @@ export const faq: FaqItem[] = [
   },
   {
     no: "07",
-    source: 5,
     category: "기술",
     q: "인터랙션은 어떻게 구현하나요?",
     a: "CSS와 GSAP·Lottie를 조합하고, 공통 애니메이션 라이브러리로 표준화합니다.",
     body: [
       "CSS와 GSAP, Lottie 등을 조합해 생동감 있는 애니메이션을 구현해 왔습니다.",
-      "ScrollMagic 기반 공통 애니메이션 라이브러리를 직접 구축해 사용합니다.",
+      "GSAP ScrollTrigger 기반 공통 애니메이션 라이브러리를 직접 구축해 사용합니다.",
       "Intersection Observer 기반 Lazy Loading을 적용하고, 미지원 환경에는 스크롤 이벤트 폴백을 넣어 안정적으로 로딩되게 했습니다.",
     ],
   },
   {
     no: "08",
-    source: 9,
     category: "기술",
     q: "웹 접근성과 구형 브라우저도 대응하나요?",
     a: "네. 노후 사이트 5곳을 개선해 웹 접근성 품질인증 마크를 취득했고, IE 호환 빌드도 구축했습니다.",
@@ -134,7 +112,6 @@ export const faq: FaqItem[] = [
   },
   {
     no: "09",
-    source: 11,
     category: "일하는 방식",
     q: "AI 도구는 어떻게 쓰나요?",
     a: "Claude Code와 Cursor를 주력으로 쓰고, 여러 모델 CLI와 MCP를 연결해 개발합니다.",
@@ -147,13 +124,12 @@ export const faq: FaqItem[] = [
   },
   {
     no: "10",
-    source: 11,
     category: "일하는 방식",
     q: "AI로 개발 속도가 얼마나 달라졌나요?",
-    a: "AI 코딩 과정을 체계화해, 5~7일 걸리던 업무를 1~2일로 줄였습니다(본인 기재).",
+    a: "AI 코딩 과정을 체계화해, 5~7일 걸리던 업무를 1~2일로 줄였습니다.",
     body: [
       "구조·기능 정의, 규칙 설계, 멀티 모델 구현, 검토·디버깅, 품질 개선의 순서로 AI 코딩 과정을 체계화했습니다.",
-      "그 결과 예전에 5~7일 걸리던 업무를 1~2일로 줄였습니다(본인 기재).",
+      "그 결과 예전에 5~7일 걸리던 업무를 1~2일로 줄였습니다.",
       "3~4개 프로젝트를 동시에 진행하기 때문에, 1~2일이면 웹사이트 3~4개가 완성됩니다.",
       "라온비엔피에서는 재사용 가능한 퍼블리싱 템플릿과 Node.js 개발환경, 명령어 기반 빌드·배포 자동화를 직접 설계해 반복 작업을 줄였습니다.",
     ],

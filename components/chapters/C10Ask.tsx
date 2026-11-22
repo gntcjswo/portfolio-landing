@@ -11,7 +11,7 @@ import {
   type ReactNode,
 } from "react";
 import { FlowSection } from "@/components/ui/Section";
-import { faq, faqCategories, faqCategoryTone, faqSources, type FaqItem } from "@/content/faq";
+import { faq, faqCategories, faqCategoryTone, type FaqItem } from "@/content/faq";
 import { links } from "@/content/links";
 import { useDesktop, useMounted } from "@/lib/hooks";
 import { scrollEngine } from "@/lib/scroll";
@@ -173,7 +173,6 @@ export function C10Ask() {
                     {f.body.map((b, i) => (
                       <p key={i}>{highlight(b, debounced)}</p>
                     ))}
-                    <p className="t-meta fg-3">출처: {faqSources[f.source]}</p>
                   </div>
                 </details>
               </li>
@@ -257,7 +256,6 @@ function Panel({ items, current, onPick, q }: { items: FaqItem[]; current: FaqIt
               <p key={i}>{highlight(b, q)}</p>
             ))}
           </div>
-          <p className="t-meta fg-3">출처: {faqSources[current.source]}</p>
         </div>
       </div>
     </div>

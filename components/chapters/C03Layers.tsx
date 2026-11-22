@@ -86,10 +86,6 @@ export function C03Layers() {
               </li>
             ))}
           </ol>
-
-          <p className="t-meta c03-notice">
-            레이어는 설명을 위한 연출입니다. 검색 순위나 AI 인용을 보장하지는 않습니다.
-          </p>
           <a
             href="#ask-04"
             className="link-u link-u-on t-body c03-cta"
@@ -158,9 +154,6 @@ export function C03Layers() {
               </div>
             </div>
           </div>
-          <figcaption className="t-tiny fg-3 c03-figcap">
-            예시: mir9 사이트 캡처 위에 설명용 레이어를 겹쳤습니다. 개선 작업 대상 사이트는 아닙니다.
-          </figcaption>
           <div className="c03-meter t-mono" aria-hidden="true">
             {["00", "01", "02", "03"].map((n, i) => (
               <span key={n} data-i={i}>

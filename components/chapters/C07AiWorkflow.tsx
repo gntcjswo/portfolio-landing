@@ -171,9 +171,6 @@ function WorkflowStudio() {
           <span className="c07-out-chip t-mono">반응형 · 9:16</span>
         </div>
       </div>
-      <p className="t-tiny fg-3 c07-notice">
-        예시 연출입니다. 장면은 실제 작업 녹화이며, 해당 작업의 AI 사용 여부와는 무관합니다.
-      </p>
     </div>
   );
 }
@@ -264,7 +261,7 @@ function AskPanel() {
       </div>
 
       <div className="c07-b-demo">
-        <div className="c07-qchips scroll-x" role="radiogroup" aria-label="예시 질문" onKeyDown={onKey} data-lenis-prevent-touch>
+        <div className="c07-qchips scroll-x" role="radiogroup" aria-label="질문" onKeyDown={onKey} data-lenis-prevent-touch>
           {chatQA.map((c, i) => (
             <button
               key={c.q}
@@ -295,13 +292,9 @@ function AskPanel() {
                   </span>
                 ))}
               </p>
-              <p className="c07-sources" style={{ ["--n" as string]: qa.a.length }}>
-                <span className="c07-src is-used t-mono">근거 · {qa.source}</span>
-              </p>
             </div>
           )}
         </div>
-        <p className="t-tiny fg-3">예시 화면입니다. 실제 AI 응답이 아니며, 답은 포트폴리오 FAQ와 본인 기재 내용을 줄인 것입니다.</p>
       </div>
     </div>
   );
