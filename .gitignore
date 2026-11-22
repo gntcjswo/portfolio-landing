@@ -1,0 +1,58 @@
+# dependencies / build output
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# synced from media/ and fonts/ by scripts/sync-media.mjs
+public/fonts/
+public/media/img/
+public/media/video/
+public/media/data/
+
+# editor / tool settings and personal notes
+.cursor/
+.vscode/
+.idea/
+.claude/
+CLAUDE.md
+AGENTS.md
+업무기록.md
+
+# local backups and scratch
+_backup_original/
+*.bak
+*.bak_*
+*.orig
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# media source folder: track only what the site ships (scripts/sync-media.mjs whitelist)
+/media/*
+!/media/img/
+!/media/video/
+!/media/data/
+/media/img/*
+!/media/img/pf16/
+!/media/img/portfolio/
+!/media/img/showcase/
+!/media/img/og/
+!/media/img/sns/
+!/media/img/logo.svg
+!/media/img/favicon.ico
+!/media/img/apple-touch-icon.png
+/media/video/*
+!/media/video/pf/
+!/media/video/hall/
+!/media/video/reel/
+/media/data/*
+!/media/data/portfolio.json
+
+
+# fonts: only the typeface the site uses
+/fonts/*
+!/fonts/Paperlogy-*.woff2
